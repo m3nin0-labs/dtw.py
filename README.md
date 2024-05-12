@@ -3,6 +3,8 @@
 
 Welcome to `dtw.py`, a high-level Python API designed to simplify the use of Dynamic Time Warping (DTW) in your projects. This library leverages a robust Rust implementation to offer fast and efficient DTW computations, making it ideal for both uni and multivariate time series analysis.
 
+> Note: This is a hobby project.
+
 ## What is Dynamic Time Warping?
 
 Dynamic Time Warping (DTW) is an algorithm for measuring similarity between two time-series which may vary in speed. For instance, similarities in walking patterns could be detected, even if one person was walking faster than the other. DTW has applications in various fields such as audio and speech processing, finance, and health monitoring, where time series data is a key component.
