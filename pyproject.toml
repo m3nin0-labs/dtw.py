@@ -1,0 +1,52 @@
+[project]
+name = "dtwpy"
+requires-python = ">=3.9"
+dynamic = ["version"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[tool.poetry]
+name = "dtwpy"
+version = "0.1.0"
+description = "Dynamic Time Warping (DTW) in Python"
+authors = ["Felipe Carlos <efelipecarlos@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.14"
+pytest-cov = "^4.1.0"
+maturin = "^1.5.1"
+
+[tool.isort]
+profile = "black"
+line_length = 88
+skip_glob = [ "docs", "notes" ]
+
+[tool.ruff]
+select = [
+  "E",   # pycodestyle
+  "F",   # pyflakes
+  "UP",  # pyupgrade
+  "I",   # isort
+  "N",   # pep8 naming
+  "PL",  # pylint
+]
+
+[tool.ruff.lint.pylint]
+max-args = 10
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+module-name = "dtwpy._internal"
+
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
