@@ -22,7 +22,14 @@ Using `dtw.py` is straightforward. Here's a quick example to get you started:
 ```python
 from dtwpy import dtw
 
-distance = dtw([[1, 2, 3]], [[1, 2, 3]])
+# time-series a
+ts_a = [[10.2, 10.5, 10.8, 11.0, 11.2, 11.5]]
+
+# time-series b
+ts_b = [[9.8, 9.6, 9.4, 9.2, 9.0, 8.8]]
+
+dtw(ts_a, ts_b)
+#> 4.2778496742248535
 ```
 
 You can use `dtw.py` to compute the DTW distance between uni or multivariate time series data.
