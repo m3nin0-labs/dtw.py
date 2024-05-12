@@ -46,6 +46,10 @@ You can use `dtw.py` to compute the DTW distance between uni or multivariate tim
 
 We welcome contributions! If you have suggestions for improvements or bug fixes, please feel free to fork the repository and submit a pull request.
 
+## Acknowledge
+
+This Python library was implemented based on the [DTW_cpp](https://github.com/cjekel/DTW_cpp) library. Thank you for making the code available.
+
 ## License
 
 `dtw.py` is distributed under the MIT license. See `LICENSE` for more details.
